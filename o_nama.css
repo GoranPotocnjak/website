@@ -1,0 +1,208 @@
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+/*naslovnica*/
+}
+.header {
+top:0;
+right:0;
+background-color: #2A2A2A;
+width:100%;
+height:5%;
+position:sticky;
+}
+
+/*gumb-kontakt*/
+.btn{
+  padding:10px 35px;
+  background-color: transparent;
+  border:1px solid white;
+  color:white;
+  outline:none;
+  transition:.6s ease;
+  float:right;
+  margin-top:1%;
+
+  margin-right:2%;
+}
+
+  .btn:hover{
+    cursor:pointer;
+    background-color:white;
+    color:black;
+  }
+
+/*navigacija*/
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  .button2{
+    padding:10px 35px;
+    background-color: transparent;
+    border:1px solid black;
+    color:black;
+    outline:none;
+    transition:.6s ease;
+    margin-left: 1%;
+    margin-top:1.5%;
+
+  }
+
+    .button2:hover{
+      cursor:pointer;
+      background-color:black;
+      color:white;
+    }
+
+/*Tekst na "sredini" navigacije*/
+.logo {
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  display:inline-block;
+  margin-left:43%;
+  font-weight: 800;
+
+}
+
+/*NAVIGACIJA - tijekom animacije je malo čudan tekst "o nama" */
+  .sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+    display: block;
+    line-height: 1.5;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    float:left;
+    font-weight: 0;
+  }
+/*menu button - sve ok*/
+.menu {
+  margin-left:2%;
+  margin-top:1%;
+  margin-bottom: 1%;
+  background:none;
+  border:none;
+  cursor:pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menu:hover {
+transform: scale(1.1);;
+}
+
+
+/*sadrzaj stranice*/
+.div1 {
+  width:50%;
+  float:left;
+  height:900px;
+  background-image:url("Slike/slika4.jpg");
+}
+.div2 {
+  width:50%;
+  float:right;
+  height:900px;
+  background-color: #D3D3D3;
+}
+.div2 h3 {
+  font-family: 'Montserrat';
+  margin-top:5%;
+  font-weight:bold;
+  font-size:3em;
+  align-items: center;
+  text-align: left;
+}
+
+.div2 p {
+  margin-top:5%;
+  font-size:24px;
+  font-family: 'Montserrat';
+  align-items: center;
+}
+
+.div3 {
+  width:50%;
+  float:left;
+  height:900px;
+  background-color: #D3D3D3;
+}
+.div3 h3 {
+  font-family: 'Montserrat';
+  margin-top:5%;
+  font-weight:bold;
+  font-size:3em;
+  align-items: center;
+  text-align: left;
+}
+
+.div3 p {
+  margin-top:5%;
+  font-size:24px;
+  font-family: 'Montserrat';
+  align-items: center;
+}
+.div4 {
+  width:50%;
+  float:right;
+  height:900px;
+  background-image:url("Slike/slika5.jpg");
+}
+
+/*footer*/
+.footer {
+  background-color:#2A2A2A;
+
+}
+.footer .social {
+  text-align: center;
+  color:white;
+  font-size:35px;
+  margin-bottom: 0.5em;
+
+}
+.footer .social a {
+  display:inline-block;
+  text-align:center;
+    margin:0 8px;
+   color:white;
+}
+.footer .social a:hover {
+  opacity:0.4;
+}
+
+.copyright {
+  text-align: center;
+  color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+
+}

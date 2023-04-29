@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>O nama</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="other-header">
+
+        <button class="menu" onclick="openNav()"><img src="Slike/menu2.png" /></button>
+        <nav id="mySidenav" class="sidenav">
+            <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">POČETNA</a>
+            <a href="jelovnik.html">JELOVNIK</a>
+            <a href="o_nama.html">O NAMA</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <a href="kontakt.html"><button href="kontakt.html" class="button2">REZERVACIJE</button></a>
+        </nav>
+        <a href="index.html"  class="logo">
+            <h1>KVATRIĆ</h1>
+        </a>
+        <a href="kontakt.html"><button class="btn">KONTAKT</button></a>
+    </header>
+
+    <div class="section-container">
+        <div class="columns image div1"></div>
+        <div class="columns content">
+            <div class="content-container">
+                <h5>POVIJEST</h5>
+                <p>S tradicijom od 1995. godine, restoran Kvatrić njeguje hrvatsku kuhinju. </p>
+                <p>Birana jela hrvatske kuhinje objedinjuju domaću recepturu i moderne tehnike pripreme i serviranja hrane na reprezentativnoj lokaciji u samom srcu Zagreba. Osim unutarnjeg prostora Restoran raspolaže i sa dvije terase. Sve vrste tjestenina, kruh te domaće slastice se rade isključivo ručno.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-container">
+        <div class="columns content">
+            <div class="content-container">
+                <h5>DJELATNICI</h5>
+                <p>Svaki gost je kao dio obitelji, svojom spontanošću i ležernim pristupom želimo učiniti sve da gastronomska ponuda koju pružamo bude potpunija te da se kod nas osjećate kao kod kuće.</p>
+            </div>
+        </div>
+        <div class="columns image div4"></div>
+    </div>
+
+
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/?lang=hr"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright© Kvatrić 2022
+        </p>
+    </div>
+
+
+
+    <script type="text/javascript">
+        /*navigacija*/
+
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-250px";
+        }
+    </script>
+</body>
+
+</html>

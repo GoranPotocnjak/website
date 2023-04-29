@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>Jelovnik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="other-header">
+
+        <button class="menu" onclick="openNav()"><img src="Slike/menu2.png" /></button>
+        <nav id="mySidenav" class="sidenav">
+            <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">POČETNA</a>
+            <a href="jelovnik.html">JELOVNIK</a>
+            <a href="o_nama.html">O NAMA</a>
+            <a href="kontakt.html">KONTAKT</a>
+            <a href="kontakt.html"><button href="kontakt.html" class="button2">REZERVACIJE</button></a>
+        </nav>
+        <a href="index.html"  class="logo">
+            <h1>KVATRIĆ</h1>
+        </a>
+        <a href="kontakt.html"><button class="btn">KONTAKT</button></a>
+    </header>
+
+    <div class="wrapper">
+        <div class="title">
+            <h4> Jelovnik </h4>
+        </div>
+        <div class="menu-list">
+            <div class="single-menu">
+                <img src="Slike/jelo1.png" />
+                <div class="menu-content">
+                    <h4>Čevapćići u lepinji - <span>45,00kn </span> </h4>
+                    <p>Ćevapčići u lepinji – veliki, 300g. Prepustite se
+                        uživanju u najkvalitetnijem mesu domaćeg uzgoja.
+                    </p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Slike/jelo3.png" />
+                <div class="menu-content">
+                    <h4>BBQ svinjska rebrica - <span>70,00kn </span> </h4>
+                    <p>BBQ svinjska rebrica, domaći prženi krumpirići,BBQ umak.
+                        Savršeno pečen komad rebrica, premazan sočnim
+                        BBQ umakom.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Slike/jelo2.jpg" />
+                <div class="menu-content">
+                    <h4>Juha od rajčice - <span>25,00kn </span> </h4>
+                    <p>Krem juha od rajčice
+                        s mozzarellom I bosiljkom.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Slike/jelo4.png" />
+                <div class="menu-content">
+                    <h4>Palačinke - <span>15,00kn </span> </h4>
+                    <p>Palačinke s nadjevom od Lino Lade duo i
+                        mascarpone sira u hrskavom omotu
+                        od mljevenih keksa s umakom od vanilije.</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Slike/jelo5.jpg" />
+                <div class="menu-content">
+                    <h4>Ramstek - <span>50,00kn </span> </h4>
+                    <p>marinirani, 300g</p>
+                </div>
+            </div>
+            <div class="single-menu">
+                <img src="Slike/jelo6.jpg" />
+                <div class="menu-content">
+                    <h4>Burger - <span>47,00kn </span> </h4>
+                    <p>S rajčicom, lukom,
+                        krastavcima, špekom, salatom
+                        i krumpirićima 200g</p>
+                </div>
+            </div>
+
+            <div class="single-menu">
+                <img src="Slike/jelo7.jpg" />
+                <div class="menu-content">
+                    <h4>Lignje - <span>60,00kn </span> </h4>
+                    <p>pohane, hrskavi krumpirići,
+                        tartar umak, limun</p>
+                </div>
+            </div>
+
+            <div class="single-menu">
+                <img src="Slike/jelo8.jpg" />
+                <div class="menu-content">
+                    <h4>Ražnjići - <span>45kn </span> </h4>
+                    <p>od svinjetine, 200g</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="./doc/Meni.pdf" class="link" download><span class="iconify" data-icon="carbon:document-download"></span>PREUZMITE JELOVNIK</a>
+
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/?lang=hr"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright© Kvatrić 2022
+        </p>
+    </div>
+
+
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script type="text/javascript">
+        /*navigacija*/
+
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-250px";
+        }
+    </script>
+</body>
+
+</html>

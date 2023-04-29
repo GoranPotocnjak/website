@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-nav">
+            <button class="menu" onclick="openNav()"><img src="Slike/menu.png" class="menu-btn" /></button>
+            <nav id="mySidenav" class="sidenav">
+                <a href="#!" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html">POČETNA</a>
+                <a href="jelovnik.html">JELOVNIK</a>
+                <a href="o_nama.html">O NAMA</a>
+                <a href="kontakt.html">KONTAKT</a>
+                <a href="kontakt.html"><button href="kontakt.html" class="button2">REZERVACIJE</button></a>
+            </nav>
+            <a href="kontakt.html"><button class="btn">KONTAKT</button></a>
+            <h2 class="podnaslov">RESTAURANT&BAR</h2>
+            <h1 class="naslov">KVATRIĆ</h1>
+        </div>
+    </header>
+
+    <div class="section-container">
+        <div class="columns image" style="background-image:url('Slike/slika1.jpg')"></div>
+        <div class="columns content">
+            <div class="content-container">
+                <h5>AMBIJENT</h5>
+                <p>
+                    U ugodnom ambijentu našeg restorana doživjet ćete vrhunsko gastronomsko putovanje kroz okuse Hrvatske. Uređenje u modernom stilu, terasa i prostori za potpunu privatnost pružit će Vam topli ugođaj.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="columns content">
+            <div class="content-container">
+                <h5>UGOĐAJ</h5>
+                <p>
+                    Svaki gost je kao dio obitelji, svojom spontanošću i ležernim pristupom želimo učiniti sve da gastronomska ponuda koju pružamo bude potpunija te da se kod nas osjećate kao kod kuće.
+                </p>
+            </div>
+        </div>
+        <div class="columns image" style="background-image:url('Slike/slika2.jpg')">
+            &nbsp;
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="columns image" style="background-image:url('Slike/slika3.jpg')">
+            &nbsp;
+        </div>
+        <div class="columns content">
+            <div class="content-container">
+                <h5>JELOVNIK</h5>
+                <p>Restoran Kvatrić nudi raznolika jela s naglaskom na hrvatsku kuhinju. Sve vrste tjestenina, kruh te domaće slastice se rade isključivo ručno. Restoran Kvatrić već je četvrtu godinu za redom u Michelin Guide preporuci!
+                </p>
+            </div>
+        </div>
+    </div>
+    <iframe class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88945.59460034882!2d15.894292026774393!3d45.840294147397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d692c902cc39%3A0x3a45249628fbc28a!2sZagreb!5e0!3m2!1shr!2shr!4v1649532998311!5m2!1shr!2shr"
+        height="450" allowfullscreen="1" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <div class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i></a>
+            <a href="https://twitter.com/?lang=hr"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright© Kvatrić 2022
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        // NAVIGACIJA
+
+        function openNav() {
+            document.getElementById("mySidenav").style.left = "0";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.left = "-250px";
+        }
+
+        // NAVBAR
+        const navBar = document.querySelector(".header-nav");
+        const topSection = document.querySelector(".header");
+
+        const topSectionOptions = {};
+
+        const topSectionObserver = new IntersectionObserver(function(entries, topSectionObserver) {
+            entries.forEach(entry => {
+                console.log(entry.target);
+                if (!entry.isIntersecting) {
+                    navBar.classList.add("header-nav-scroll");
+                } else {
+                    navBar.classList.remove("header-nav-scroll");
+                }
+            });
+
+        }, topSectionOptions);
+
+        topSectionObserver.observe(topSection);
+    </script>
+</body>
+
+</html>
